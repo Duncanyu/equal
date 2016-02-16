@@ -14,7 +14,7 @@
         </value>
         <next>
           <block type="oled_drawtext" id="25">
-            <field name="TEXT">1     equals 2</field>
+            <field name="TEXT">1     equals 2=</field>
             <next>
               <block type="oled_drawnumber" id="48" inline="true">
                 <value name="NUMBER">
@@ -46,7 +46,7 @@
                     </value>
                     <next>
                       <block type="oled_drawtext" id="71">
-                        <field name="TEXT">1 NOT equals 2</field>
+                        <field name="TEXT">1 NOT eqaul 2=</field>
                         <next>
                           <block type="oled_drawnumber" id="72" inline="true">
                             <value name="NUMBER">
