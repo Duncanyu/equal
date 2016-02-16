@@ -54,7 +54,7 @@
                                 <field name="OP">NEQ</field>
                                 <value name="A">
                                   <block type="math_number" id="74">
-                                    <field name="NUM">50</field>
+                                    <field name="NUM">5</field>
                                   </block>
                                 </value>
                                 <value name="B">
