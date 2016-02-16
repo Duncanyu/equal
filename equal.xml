@@ -1,1 +1,80 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="oled_cleardisplay" id="1" x="-40" y="-82">
+    <next>
+      <block type="oled_setcursor" id="2" inline="true">
+        <value name="STARTX">
+          <block type="math_number" id="3">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <value name="STARTY">
+          <block type="math_number" id="4">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <next>
+          <block type="oled_drawtext" id="25">
+            <field name="TEXT">1     equals 2</field>
+            <next>
+              <block type="oled_drawnumber" id="48" inline="true">
+                <value name="NUMBER">
+                  <block type="logic_compare" id="55" inline="true">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="math_number" id="56">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="57">
+                        <field name="NUM">2</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="oled_setcursor" id="60" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="61">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="62">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="oled_drawtext" id="71">
+                        <field name="TEXT">1 NOT equals 2</field>
+                        <next>
+                          <block type="oled_drawnumber" id="72" inline="true">
+                            <value name="NUMBER">
+                              <block type="logic_compare" id="73" inline="true">
+                                <field name="OP">NEQ</field>
+                                <value name="A">
+                                  <block type="math_number" id="74">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_number" id="75">
+                                    <field name="NUM">2</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
